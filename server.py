@@ -12,5 +12,10 @@ def repeat(name,number):
 
     return render_template('repeat.html',banana=name,times=number)
 
+
+@app.route('/change')
+def change():
+    return "We made this change"
+
 if __name__=="__main__": 
     app.run(debug=True)
